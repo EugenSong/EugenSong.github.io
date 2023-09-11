@@ -19,12 +19,20 @@ author: Eugene Song
 # --- List of links in the navigation bar --- #
 ###############################################
 
+
+
 navbar-links:
-  About Me: "aboutme"
-  Resources:
-    - Project 1: "https://beautifuljekyll.com"
-    - Project 2: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+  - - "Home"
+    - "/"
+  - - "About Me"
+    - "/aboutme"
+  - - "Projects"
+    - "/projects"
+  - - "Socials"
+    - "#socials"
+  - - "Resume"
+    - "/assets/css/Eugene_Song_resume.pdf"
+
 
 ################
 # --- Logo --- #
@@ -59,7 +67,7 @@ social-network-links:
 #  youtube: c/daattali
 #  medium: yourname
 #  reddit: yourname
-  linkedin: daattali
+  linkedin: eugenessong
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
