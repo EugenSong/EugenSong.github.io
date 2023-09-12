@@ -33,31 +33,34 @@ layout: page
         {% endif %}
       </a> -->
 
-      {% if post.github_url %}
-      <a href="{{ post.github_url }}">
-        {% endif %}
-        <h2 class="post-title">{{ post.title | strip_html }}</h2>
-        {% if post.github_url %} {% if post.subtitle %}
-        <h3 class="post-subtitle">{{ post.subtitle | strip_html }}</h3>
-        {% endif %}
-      </a>
-      {% endif %}
+      <div class="title-img-grid-view">
+        <div>
+          {% if post.github_url %}
+          <a href="{{ post.github_url }}">
+            {% endif %}
+            <h2 class="post-title">{{ post.title | strip_html }}</h2>
+            {% if post.github_url %} {% if post.subtitle %}
+            <h3 class="post-subtitle">{{ post.subtitle | strip_html }}</h3>
+            {% endif %}
+          </a>
+          {% endif %}
+        </div>
 
-      <!-- <p class="post-meta">
+        <!-- <p class="post-meta">
         {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
         Posted on {{ post.date | date: date_format }}
       </p> -->
 
-      {% if thumbnail != "" %}
-      <div class="post-image post-image-small">
-        <a href="{{ post.url | absolute_url }}" aria-label="Thumbnail">
-          <img src="{{ thumbnail | absolute_url }}" alt="Post thumbnail" />
-        </a>
-      </div>
-      {% endif %} {% unless site.feed_show_excerpt == false %} {% if thumbnail
-      != "" %}
+        {% if thumbnail != "" %}
+        <div class="post-image post-image-small">
+          <a href="{{ post.url | absolute_url }}" aria-label="Thumbnail">
+            <img src="{{ thumbnail | absolute_url }}" alt="Post thumbnail" />
+          </a>
+        </div>
+        {% endif %} {% unless site.feed_show_excerpt == false %} {% if thumbnail
+        != "" %}
 
-      <!-- Images click here to Re-direct
+        <!-- Images click here to Re-direct
       <div class="post-image post-image-short">
         <a href="{{ post.url | absolute_url }}" aria-label="Thumbnail">
           <img src="{{ thumbnail | absolute_url }}" alt="Post thumbnail" />
@@ -65,17 +68,18 @@ layout: page
       </div>
       {% endif %} -->
 
-      <!-- Images click here to Re-direct -->
-      <div class="post-image post-image-short">
-        {% if post.github_url %}
-        <a href="{{ post.github_url }}" aria-label="Thumbnail">
-          <img src="{{ thumbnail | absolute_url }}" alt="Post thumbnail" />
-        </a>
-        {% else %}
-        <a href="{{ post.url | absolute_url }}" aria-label="Thumbnail">
-          <img src="{{ thumbnail | absolute_url }}" alt="Post thumbnail" />
-        </a>
-        {% endif %}
+        <!-- Images click here to Re-direct -->
+        <div class="post-image post-image-short">
+          {% if post.github_url %}
+          <a href="{{ post.github_url }}" aria-label="Thumbnail">
+            <img src="{{ thumbnail | absolute_url }}" alt="Post thumbnail" />
+          </a>
+          {% else %}
+          <a href="{{ post.url | absolute_url }}" aria-label="Thumbnail">
+            <img src="{{ thumbnail | absolute_url }}" alt="Post thumbnail" />
+          </a>
+          {% endif %}
+        </div>
       </div>
 
       <div class="post-entry">
