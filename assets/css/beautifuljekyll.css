@@ -513,9 +513,6 @@ height: 12rem;
 width: 12rem;
 }
 
-.post-preview .post-image:hover {
-filter: grayscale(0%);
-}
 .post-preview .post-image img {
 max-height: 100%;
 max-width: 100%;
@@ -530,9 +527,8 @@ margin-top: -2.1875rem;
 }
 .post-preview .post-image-short {
   margin-top: 0;
-  
-  
 }
+
 }
 .post-preview .post-image-small {
 width: 100%;
