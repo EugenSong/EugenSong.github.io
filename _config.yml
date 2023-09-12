@@ -24,14 +24,14 @@ author: Eugene Song
 navbar-links:
   - - "Home"
     - "/"
-  - - "About Me"
-    - "/aboutme"
   - - "Projects"
-    - "/projects"
+    - "#projects"
   - - "Socials"
     - "#socials"
   - - "Resume"
     - "/assets/css/Eugene_Song_resume.pdf"
+  - - "About Me"
+    - "/aboutme"
 
 
 ################
