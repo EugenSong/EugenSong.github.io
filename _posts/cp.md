@@ -1,10 +1,13 @@
 ---
 layout: post
 title: Loo
-subtitle: the most simple public bathroom finder
-cover-img: /assets/img/path.jpg
-thumbnail-img: /assets/img/thumb.png
-share-img: /assets/img/path.jpg
+position: left
+featured_image: /assets/img/thumb.png
+project_link: #
+button_text: View on GitHub
+button_icon: github
+lead_text: the most simple public bathroom finder
+categories: ["portfolio"]
 tags: [books, test]
 ---
 

@@ -1,5 +1,0 @@
----
-layout: home
-title: Eugene Song
-subtitle: backend software developer &nbsp;&bull;&nbsp; mobile app developer 
----
