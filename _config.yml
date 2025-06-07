@@ -5,9 +5,9 @@ description: Software Engineer | AWS Solutions Architect | Backend & Cloud Infra
 url: "https://eugenesong.github.io"
 baseurl: ""
 
-twitter_username: 
 github_username: EugenSong
 linkedin_username: eugenessong
+medium_username: https://medium.com/@esong28
 facebook_username: 
 instagram_username: 
 pinterest_username: 
@@ -49,8 +49,12 @@ nav_item:
   - { url: '/about', text: 'About' }
   - { url: '/assets/css/Eugene_Song_resume.pdf', text: 'Resume' }
 
+# Section headers
+section_title: Projects
+section_subtitle: 
+
 # Contact form settings
-enable_contact: true
+enable_contact: false
 contact_form_action: ""
 contact_form_success_message: "Thank you for reaching out! I'll get back to you soon."
 
