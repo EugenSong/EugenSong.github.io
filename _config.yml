@@ -1,7 +1,7 @@
 ### your general site settings
 title: Eugene Song
 email: esong28@outlook.com
-description: Software Engineer | AWS Solutions Architect | Backend & Cloud Infrastructure
+description: Software Engineer @ enGen
 url: "https://eugenesong.github.io"
 baseurl: ""
 
@@ -25,7 +25,7 @@ google_analytics:
 admin_name: Eugene Song
 
 # footer text
-footer_text: 'Software Engineer with expertise in scalable backend architectures and cloud solutions'
+footer_text: ''
 
 # Build settings
 markdown: kramdown
@@ -52,6 +52,9 @@ nav_item:
 # Section headers
 section_title: Projects
 section_subtitle: 
+
+# Homepage subtitle
+subtitle: Software Engineer with 2+ years of hands-on experience designing and implementing scalable backend architectures, secure API solutions, and cloud infrastructure for healthcare IT and modern web applications 
 
 # Contact form settings
 enable_contact: false
