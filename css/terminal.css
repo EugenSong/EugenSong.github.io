@@ -1,0 +1,188 @@
+/* Terminal CSS Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0c0c0c;
+    font-family: 'Courier New', 'Monaco', 'Menlo', monospace;
+    color: #00ff00;
+    overflow: hidden;
+    height: 100vh;
+}
+
+#terminal {
+    width: 100vw;
+    height: 100vh;
+    background: #0c0c0c;
+    border: 2px solid #333;
+    display: flex;
+    flex-direction: column;
+}
+
+#terminal-header {
+    background: #2d2d2d;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    border-bottom: 1px solid #333;
+}
+
+.terminal-controls {
+    display: flex;
+    gap: 8px;
+}
+
+.control {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.control.close {
+    background: #ff5f56;
+}
+
+.control.minimize {
+    background: #ffbd2e;
+}
+
+.control.maximize {
+    background: #27ca3f;
+}
+
+.terminal-title {
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#terminal-body {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background: #0c0c0c;
+}
+
+#terminal-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.terminal-line {
+    margin-bottom: 5px;
+    white-space: pre-wrap;
+}
+
+.terminal-output {
+    margin-bottom: 20px;
+    white-space: pre-wrap;
+    line-height: 1.4;
+}
+
+.prompt {
+    color: #00ff00;
+    font-weight: bold;
+}
+
+.command {
+    color: #ffffff;
+    margin-left: 5px;
+}
+
+.current-line {
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+}
+
+#user-input {
+    color: #ffffff;
+    margin-left: 5px;
+    min-width: 1px;
+}
+
+.cursor {
+    color: #00ff00;
+    font-weight: bold;
+    animation: blink 1s infinite;
+    margin-left: 2px;
+}
+
+@keyframes blink {
+    0%, 50% {
+        opacity: 1;
+    }
+    51%, 100% {
+        opacity: 0;
+    }
+}
+
+.terminal-output pre {
+    margin: 0;
+    font-family: inherit;
+    color: #00ff00;
+}
+
+.error {
+    color: #ff6b6b;
+}
+
+.success {
+    color: #51cf66;
+}
+
+.info {
+    color: #74c0fc;
+}
+
+.warning {
+    color: #ffd43b;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    #terminal-body {
+        padding: 10px;
+        font-size: 14px;
+    }
+    
+    .terminal-title {
+        font-size: 10px;
+    }
+}
+
+/* Scrollbar styling */
+#terminal-body::-webkit-scrollbar {
+    width: 8px;
+}
+
+#terminal-body::-webkit-scrollbar-track {
+    background: #1a1a1a;
+}
+
+#terminal-body::-webkit-scrollbar-thumb {
+    background: #444;
+    border-radius: 4px;
+}
+
+#terminal-body::-webkit-scrollbar-thumb:hover {
+    background: #666;
+}
+
+/* Selection styling */
+::selection {
+    background: #00ff00;
+    color: #0c0c0c;
+}
+
+::-moz-selection {
+    background: #00ff00;
+    color: #0c0c0c;
+}

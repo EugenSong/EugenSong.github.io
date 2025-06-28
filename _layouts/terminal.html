@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ site.title }} - Terminal</title>
+    <link rel="stylesheet" href="{{ '/css/terminal.css' | prepend: site.baseurl }}">
+    <link rel="icon" href="{{ '/img/favicon.png' | prepend: site.baseurl }}">
+</head>
+<body>
+    <div id="terminal">
+        <div id="terminal-header">
+            <div class="terminal-controls">
+                <span class="control close"></span>
+                <span class="control minimize"></span>
+                <span class="control maximize"></span>
+            </div>
+            <div class="terminal-title">eugene@portfolio:~$</div>
+        </div>
+        
+        <div id="terminal-body">
+            <div id="terminal-content">
+                <div class="terminal-line">
+                    <span class="prompt">eugene@portfolio:~$</span>
+                    <span class="command">welcome</span>
+                </div>
+                <div class="terminal-output">
+                    <pre>
+Welcome to Eugene Song's Portfolio Terminal v1.0
+Type a command or number to navigate:
+
+Available commands:
+  1. projects    - View my portfolio projects
+  2. about       - Learn more about me  
+  3. resume      - Download my resume
+  4. contact     - Get in touch
+  5. skills      - View my technical skills
+  6. clear       - Clear the terminal
+  7. help        - Show this help menu
+  8. exit        - Return to original site
+
+                    </pre>
+                </div>
+                
+                <div class="current-line">
+                    <span class="prompt">eugene@portfolio:~$</span>
+                    <span id="user-input"></span>
+                    <span id="cursor" class="cursor">█</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ '/js/terminal.js' | prepend: site.baseurl }}"></script>
+</body>
+</html>
