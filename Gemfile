@@ -18,3 +18,6 @@ gem "wdm", "~> 0.1", :install_if => Gem.win_platform?
 gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 
 gem "webrick", "~> 1.7"
+
+# Pin ffi to a version compatible with older RubyGems
+gem "ffi", "~> 1.15.5"
