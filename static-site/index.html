@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eugene Song</title>
+    <meta name="description" content="Software Engineer @ enGen">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/favicon.png">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="header-left">
+                <a href="#overview" class="logo" data-tab="overview">E.S</a>
+                <nav class="nav-tabs">
+                    <a href="#overview" class="nav-tab active" data-tab="overview">
+                        <i class="fas fa-home"></i> Overview
+                    </a>
+                    <a href="#projects" class="nav-tab" data-tab="projects">
+                        <i class="fas fa-code"></i> Projects
+                    </a>
+                    <a href="assets/css/Eugene_Song_resume.pdf" target="_blank" class="nav-link-external">
+                        <i class="fas fa-download"></i> Resume
+                    </a>
+                </nav>
+            </div>
+            <div class="header-right">
+                <div class="header-controls">
+                    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/eugenessong" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                        <a href="https://github.com/EugenSong" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="https://medium.com/@esong28" target="_blank" class="social-link">
+                            <i class="fab fa-medium"></i> Medium
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Overview Tab -->
+        <div id="overview" class="tab-content active">
+            <div class="dashboard-grid">
+                <!-- Profile Card -->
+                <div class="profile-card">
+                    <div class="profile-header">
+                        <img src="assets/img/my_profile-pic.jpg" alt="Eugene Song" class="profile-image">
+                        <div class="profile-info">
+                            <h2 class="profile-name">Eugene Song</h2>
+                            <p class="profile-title">Software Engineer @ enGen</p>
+                            <div class="profile-stats">
+                                <span class="stat">
+                                    <i class="fas fa-map-marker-alt"></i> Los Angeles, CA
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile-about">
+                        <div class="about-text">
+                            <p>Software engineer at enGen working on healthcare IT systems where reliability and security are non-negotiable. I enjoy building backend systems that can handle complexity while staying maintainable.</p>
+                            
+                            <p>My work focuses on designing APIs, optimizing database performance, and implementing secure authentication flows. I'm particularly interested in problems where system design decisions have real impact on users and business operations.</p>
+                            
+                            <p>When I'm not coding, I'm usually learning about new technologies or contributing to projects that solve meaningful problems. I believe the best software is built when you understand both the technical and business context.</p>
+                        </div>
+                        
+                        <div class="about-highlights">
+                            <div class="highlight-item">
+                                <h4><i class="fas fa-graduation-cap"></i> Background</h4>
+                                <p>Software engineering with focus on scalable backend systems and cloud infrastructure</p>
+                            </div>
+                            <div class="highlight-item">
+                                <h4><i class="fas fa-heart"></i> Interests</h4>
+                                <p>System design, API architecture, database optimization, security patterns</p>
+                            </div>
+                            <div class="highlight-item">
+                                <h4><i class="fas fa-bullseye"></i> Goals</h4>
+                                <p>Building reliable systems that can adapt to changing requirements while maintaining performance</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-section">
+                            <h4>Get in Touch</h4>
+                            <div class="contact-buttons">
+                                <button type="button" class="btn btn-contact email-btn" data-email="esong28@outlook.com">
+                                    <i class="fas fa-envelope"></i> Email Me
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Stats -->
+                <div class="stats-card">
+                    <h3 class="card-title">
+                        <i class="fas fa-chart-bar"></i> Quick Stats
+                    </h3>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-number">6</div>
+                            <div class="stat-label">Projects</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">2+</div>
+                            <div class="stat-label">Years Exp</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">5+</div>
+                            <div class="stat-label">Languages</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">Healthcare</div>
+                            <div class="stat-label">Industry</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tech Stack -->
+                <div class="tech-card">
+                    <h3 class="card-title">
+                        <i class="fas fa-tools"></i> Tech Stack
+                    </h3>
+                    <div class="tech-grid">
+                        <div class="tech-category">
+                            <span class="tech-label">Languages</span>
+                            <div class="tech-tags">
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Java</span>
+                                <span class="tech-tag">SQL</span>
+                                <span class="tech-tag">C</span>
+                                <span class="tech-tag">C++</span>
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                            </div>
+                        </div>
+                        <div class="tech-category">
+                            <span class="tech-label">Frameworks & Libraries</span>
+                            <div class="tech-tags">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">Express</span>
+                                <span class="tech-tag">Flask</span>
+                                <span class="tech-tag">Django</span>
+                                <span class="tech-tag">Spring Boot</span>
+                                <span class="tech-tag">JUnit</span>
+                                <span class="tech-tag">Pandas</span>
+                            </div>
+                        </div>
+                        <div class="tech-category">
+                            <span class="tech-label">Databases & Tools</span>
+                            <div class="tech-tags">
+                                <span class="tech-tag">PostgreSQL</span>
+                                <span class="tech-tag">MongoDB</span>
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">SQLite</span>
+                                <span class="tech-tag">Redis</span>
+                                <span class="tech-tag">Git</span>
+                                <span class="tech-tag">Docker</span>
+                                <span class="tech-tag">Jenkins</span>
+                            </div>
+                        </div>
+                        <div class="tech-category">
+                            <span class="tech-label">Cloud & Platforms</span>
+                            <div class="tech-tags">
+                                <span class="tech-tag">AWS</span>
+                                <span class="tech-tag">Terraform</span>
+                                <span class="tech-tag">Linux</span>
+                                <span class="tech-tag">Ubuntu</span>
+                                <span class="tech-tag">REST APIs</span>
+                                <span class="tech-tag">JSON</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects Tab -->
+        <div id="projects" class="tab-content">
+            <div class="projects-header">
+                <div class="projects-title-section">
+                    <h2>Projects</h2>
+                </div>
+            </div>
+            <div class="projects-grid">
+                <!-- SafeSave Project -->
+                <div class="project-card" data-project-link="https://github.com/aldenmchico/SafeSave" style="cursor: pointer;">
+                    <div class="project-image">
+                        <img src="assets/img/screenshot.png" alt="SafeSave">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-name">
+                                <i class="fas fa-book"></i> SafeSave
+                            </h3>
+                            <a href="https://github.com/aldenmchico/SafeSave" target="_blank" class="project-link" onclick="event.stopPropagation();">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                        <p class="project-description">complete secure password and data manager</p>
+                        <div class="project-topics">
+                            <span class="topic">Web</span>
+                            <span class="topic">ExpressJS</span>
+                            <span class="topic">React</span>
+                        </div>
+                        <div class="project-footer">
+                            <span class="project-language">
+                                <span class="language-dot"></span>
+                                Web
+                            </span>
+                            <span class="project-updated">Oct 2023</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Omok Project -->
+                <div class="project-card" data-project-link="https://eugene-omok.netlify.app" style="cursor: pointer;">
+                    <div class="project-image">
+                        <img src="assets/img/omok.png" alt="Omok">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-name">
+                                <i class="fas fa-book"></i> Omok
+                            </h3>
+                            <a href="https://eugene-omok.netlify.app" target="_blank" class="project-link" onclick="event.stopPropagation();">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                        <p class="project-description">rendition of Maplestory's Omok</p>
+                        <div class="project-topics">
+                            <span class="topic">Web</span>
+                            <span class="topic">Typescript</span>
+                            <span class="topic">NextJS</span>
+                        </div>
+                        <div class="project-footer">
+                            <span class="project-language">
+                                <span class="language-dot"></span>
+                                Web
+                            </span>
+                            <span class="project-updated">Sep 2023</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FUUD Project -->
+                <div class="project-card" data-project-link="https://github.com/codepath-group6/restaurant" style="cursor: pointer;">
+                    <div class="project-image">
+                        <img src="assets/img/fuud.png" alt="FUUD">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-name">
+                                <i class="fas fa-book"></i> FUUD
+                            </h3>
+                            <a href="https://github.com/codepath-group6/restaurant" target="_blank" class="project-link" onclick="event.stopPropagation();">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                        <p class="project-description">less stress, more fun when searching for food</p>
+                        <div class="project-topics">
+                            <span class="topic">Mobile</span>
+                            <span class="topic">iOS</span>
+                            <span class="topic">Swift</span>
+                        </div>
+                        <div class="project-footer">
+                            <span class="project-language">
+                                <span class="language-dot"></span>
+                                Mobile
+                            </span>
+                            <span class="project-updated">Feb 2020</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PolyZOT Project -->
+                <div class="project-card" data-project-link="https://github.com/polyzot-jp/polyzot" style="cursor: pointer;">
+                    <div class="project-image">
+                        <img src="assets/img/polyzot.png" alt="PolyZOT">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-name">
+                                <i class="fas fa-book"></i> PolyZOT
+                            </h3>
+                            <a href="https://github.com/polyzot-jp/polyzot" target="_blank" class="project-link" onclick="event.stopPropagation();">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                        <p class="project-description">language learning made fun</p>
+                        <div class="project-topics">
+                            <span class="topic">Mobile</span>
+                            <span class="topic">React Native</span>
+                            <span class="topic">Expo Go</span>
+                        </div>
+                        <div class="project-footer">
+                            <span class="project-language">
+                                <span class="language-dot"></span>
+                                Mobile
+                            </span>
+                            <span class="project-updated">Feb 2020</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Loo Project -->
+                <div class="project-card" data-project-link="https://github.com/EugenSong/Loo" style="cursor: pointer;">
+                    <div class="project-image">
+                        <img src="assets/img/loo.png" alt="Loo">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-name">
+                                <i class="fas fa-book"></i> Loo
+                            </h3>
+                            <a href="https://github.com/EugenSong/Loo" target="_blank" class="project-link" onclick="event.stopPropagation();">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                        <p class="project-description">the most simple public bathroom finder</p>
+                        <div class="project-topics">
+                            <span class="topic">Mobile</span>
+                            <span class="topic">Swift</span>
+                            <span class="topic">UIKit</span>
+                        </div>
+                        <div class="project-footer">
+                            <span class="project-language">
+                                <span class="language-dot"></span>
+                                Mobile
+                            </span>
+                            <span class="project-updated">May 2019</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Exercise Tracker Project -->
+                <div class="project-card" data-project-link="https://github.com/EugenSong/webdev-exercise-tracker-portfolio-project" style="cursor: pointer;">
+                    <div class="project-image">
+                        <img src="assets/img/add-exercise-tracker.png" alt="Exercise Tracker">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-name">
+                                <i class="fas fa-book"></i> Exercise Tracker
+                            </h3>
+                            <a href="https://github.com/EugenSong/webdev-exercise-tracker-portfolio-project" target="_blank" class="project-link" onclick="event.stopPropagation();">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                        <p class="project-description">single-page-application exercise journal</p>
+                        <div class="project-topics">
+                            <span class="topic">Web</span>
+                            <span class="topic">MongoDB</span>
+                            <span class="topic">Express</span>
+                        </div>
+                        <div class="project-footer">
+                            <span class="project-language">
+                                <span class="language-dot"></span>
+                                Web
+                            </span>
+                            <span class="project-updated">Jan 2019</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- JavaScript -->
+    <script src="js/app.js"></script>
+</body>
+</html>
