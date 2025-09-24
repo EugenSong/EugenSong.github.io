@@ -19,5 +19,6 @@ gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 
 gem "webrick", "~> 1.7"
 
-# Pin ffi to a version compatible with older RubyGems
+# Pin dependencies to versions compatible with older RubyGems (3.0.6)
 gem "ffi", "~> 1.15.5"
+gem "sass-embedded", "~> 1.57.1"
